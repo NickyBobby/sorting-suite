@@ -60,5 +60,10 @@ class MergeSortTest < Minitest::Test
     assert_equal ["a", "a", "a", "a"], @sorter.sort(["a", "a", "a", "a"])
   end
 
+  def test_merge_sort_will_accept_an_empty_array
+
+    assert_equal [], @sorter.sort([])
+  end
+
 
 end

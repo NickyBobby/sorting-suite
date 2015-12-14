@@ -33,7 +33,7 @@ class InsertionSortTest < Minitest::Test
   end
 
   def test_insertion_sort_will_correctly_sort_words
-    
+
     assert_equal ["apple","banana","carrot","dandelion"], @sorter.sort(["dandelion","banana","apple","carrot"])
   end
 
@@ -55,6 +55,11 @@ class InsertionSortTest < Minitest::Test
   def test_insertion_sort_will_correctly_sort_an_array_of_the_same_letter
 
     assert_equal ["a", "a", "a", "a"], @sorter.sort(["a", "a", "a", "a"])
+  end
+
+  def test_insertion_sort_will_accept_an_empty_array
+
+    assert_equal [], @sorter.sort([])
   end
 
 

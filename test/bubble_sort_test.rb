@@ -59,5 +59,10 @@ class BubbleSortTest < Minitest::Test
     assert_equal [1,1,1,1,1], @sorter.sort([1,1,1,1,1])
   end
 
+  def test_bubble_sort_will_accept_an_empty_array
+
+    assert_equal [], @sorter.sort([])
+  end
+
 
 end
