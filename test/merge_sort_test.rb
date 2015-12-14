@@ -21,6 +21,7 @@ class MergeSortTest < Minitest::Test
 
   def test_merge_sort_will_correctly_sort_numbers_in_reverse_order
 
+    assert_equal [10, 15, 20, 25, 30], @sorter.sort([30, 25, 20, 15, 10])
     assert_equal [1, 2, 3, 4, 5], @sorter.sort([5, 4, 3, 2, 1])
   end
 
@@ -32,6 +33,7 @@ class MergeSortTest < Minitest::Test
 
   def test_merge_sort_will_correctly_sort_letters_in_reverse_order
 
+    assert_equal ["w","x","y","z"], @sorter.sort(["z","y","x","w"])
     assert_equal ["a","b","c","d","e"], @sorter.sort(["e","d","c","b","a"])
   end
 
@@ -42,6 +44,7 @@ class MergeSortTest < Minitest::Test
 
   def test_merge_sort_will_correctly_sort_words_that_start_with_the_same_letter
 
+    assert_equal ["ball","banana","baseball","basketball"], @sorter.sort(["basketball","ball","baseball","banana"])
     assert_equal ["aardvark","android","apple","assertion"], @sorter.sort(["apple","android","assertion","aardvark"])
   end
 
@@ -57,6 +60,7 @@ class MergeSortTest < Minitest::Test
 
   def test_merge_sort_will_correctly_sort_an_array_of_the_same_letter
 
+    assert_equal ["z","z","z","z"], @sorter.sort(["z","z","z","z"])
     assert_equal ["a", "a", "a", "a"], @sorter.sort(["a", "a", "a", "a"])
   end
 
