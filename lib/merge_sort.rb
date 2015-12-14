@@ -5,9 +5,9 @@ class MergeSort
   def sort(m_arr)
     return m_arr if m_arr.length <= 1
     mid = (m_arr.length / 2)
-    left_slice = m_arr[0, mid]
-    right_slice = m_arr[mid, m_arr.length]
-    merge(sort(left_slice), sort(right_slice))
+    left_slice = sort(m_arr[0, mid])
+    right_slice = sort(m_arr[mid, m_arr.length])
+    merge(left_slice, right_slice)
   end
 
   def merge(left, right)
