@@ -8,7 +8,6 @@ class MergeSort
     left_slice = m_arr[0, mid]
     right_slice = m_arr[mid, m_arr.length]
     merge(sort(left_slice), sort(right_slice))
-
   end
 
   def merge(left, right)
@@ -28,7 +27,3 @@ class MergeSort
   end
 
 end
-
-sorter = MergeSort.new
-p sorter.sort([4,5,2,7,1,8])
-p sorter.sort(["z","h","a","c","l","b","z"])

@@ -6,7 +6,7 @@ class BubbleSort
     swapped = true
     while swapped
        swapped = false
-      0.upto(bub_arr.size-2) do |n|
+      0.upto(bub_arr.length - 2) do |n|
         if bub_arr[n] > bub_arr[n+1]
           bub_arr[n], bub_arr[n+1] = bub_arr[n+1], bub_arr[n]
           swapped = true

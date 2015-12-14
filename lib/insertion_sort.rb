@@ -8,7 +8,7 @@ class InsertionSort
     sorted = [ins_arr[0]]
     ins_arr.delete_at(0)
     insert(ins_arr, sorted)
-    return sorted
+    sorted
   end
 
   def insert(ins_arr, sorted)
@@ -28,16 +28,3 @@ class InsertionSort
   end
 
 end
-
-
-
-
-
-sorter = InsertionSort.new
-# => #<InsertionSort:0x007f81a19e94e8>
-p sorter.sort(["d", "b", "a", "c", "z"])
-# => ["a", "b", "c", "d"]
-# p sorter.sort(["b", "c", "a"])
-# p sorter.sort([2, 3, 1])
-# p sorter.sort(["z", "y", "x"])
-# p sorter.sort([2, 1])
